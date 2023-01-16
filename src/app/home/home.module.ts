@@ -6,7 +6,9 @@ import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared/shared.module';
 import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
-
+import { MatCardModule} from '@angular/material/card'
+import { MatGridListModule} from '@angular/material/grid-list'
+import { MatListModule} from '@angular/material/list'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,10 @@ import { AboutComponent } from './components/about/about.component';
   imports: [
     CommonModule,
     SharedModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MatCardModule,
+    MatGridListModule,
+    MatListModule
   ]
 })
 export class HomeModule { }

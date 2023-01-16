@@ -1,25 +1,54 @@
 <!-- <p>banner component is the home-top component</p> -->
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}">Hi, I'm Alexis Cortes</mat-card-title>
+      <mat-card-subtitle [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+      (@transitionTextEnter.done)='_onTextAnimationEnd($event)'>Software Developer</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <br><br> 
+        <!-- <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}" ngClass.gt-sm="current-typo--h1-light"
+            ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">Love</h2>
 
-<div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm">
+        <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 400}}" ngClass.gt-sm="current-typo--h1-light"
+            ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">to Develop Software</h2>
+        <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--16" ngClass.xs="tb-height--8"></div>
+
+        <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+            (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
+            ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+            I am a .NET developer.</p> -->
+
+
+            <mat-grid-list cols="2" >
+                <mat-grid-tile>
+                    <img style="object-fit: cover; height: inherit; width: inherit;" layout-fill src="assets/img/avatar/pic_avatar.jpeg" />
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-list>
+                        <mat-list-item>
+                            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 400}}" ngClass.gt-sm="current-typo--h1-light"
+                                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">Love to Develop Software</h2>
+                            <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--16" ngClass.xs="tb-height--8"></div>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+                            (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
+                            ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+                            I am a .NET developer.</p>
+                        </mat-list-item>
+                      </mat-list>
+                </mat-grid-tile>
+              </mat-grid-list>
+
+              
+    </mat-card-content>
+  </mat-card>
+
+<br><br>
+  <!-- <div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm">
     <div class="tb-container tb-position--relative container">
-
         <div class="content-container" fxLayout="column">
-
-            <div ngClass.gt-sm="tb-height--126" ngClass.sm="tb-height--72" ngClass.xs="tb-height--72"></div>
-            <h4 [@transitionTextEnter]="{value:'in', params: {animDelay: 200}}" ngClass.gt-sm="current-typo--h4"
-                ngClass.sm="current-typo--h5" ngClass.xs="current-typo--h5">Hi, I'am Alexis Cortes</h4>
-            <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--12" ngClass.xs="tb-height--12"></div>
-            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}" ngClass.gt-sm="current-typo--h1-light"
-                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">Love</h2>
-
-            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 400}}" ngClass.gt-sm="current-typo--h1-light"
-                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">to Develop Software</h2>
-            <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--16" ngClass.xs="tb-height--8"></div>
-
-            <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
-                (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
-                ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
-                I am a .NET developer.</p>
         </div>
     </div>
-</div>
+</div> -->
