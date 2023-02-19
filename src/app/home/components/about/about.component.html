@@ -3,6 +3,7 @@
         <div fxLayout="column" fxLayoutAlign="start stretch">
             <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row"
                 fxLayoutAlign="start end">
+                <p-divider></p-divider>
                 <h4 class="title current-typo--h4 tb-flex--shrink-0">About Me.</h4>
                 <div class="tb-width--12"></div>
                 <div fxFlex="60" class="line tb-color-bg--black"></div>
@@ -12,12 +13,11 @@
             <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
 
             <div class="grid">
-                <div class="col hidden md:inline-flex">
+                <div class="col">
                     <div class="border-round-sm text-white mx-4">
                         <p [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}"
                             class="current-typo--body1-medium tb-color--black-54">In 2017, I started to work as .NET
-                            developer
-                            when I finished school. Since then, I have made over <span class="tb-color--black">X+ Web
+                            developer when I finished school after be graduated as Electronics and Communications Engineer. Since then, I have made over <span class="tb-color--black">X+ Web
                                 services</span> and <span class="tb-color--black">X+ webapps</span>.</p>
 
                         <p [@transitionText]="{value:_mTriggerAnim, params:{animDelay:200}}"
@@ -40,54 +40,133 @@
                 <div class="col">
                     <div class="card">
                         <div class="flex flex-wrap justify-content-center card-container gap-3">
+                            <div class="border-round w-6rem h-6rem text-white font-bold flex align-items-center justify-content-center">
+                                <p-image src="assets/img/icons/angular.svg" alt="Image" width="100%"></p-image>
+                            </div>
                             <div
-                                class="border-round w-12rem h-6rem text-white font-bold flex align-items-center justify-content-center">
-                                <div class="skill" style="background-color: #F44040;">
-                                    <h5 class="current-typo--h5 tb-color--white">Angular</h5>
+                                class="border-round w-6rem h-6rem text-white font-bold flex align-items-center justify-content-center">
+                                <p-image src="assets/img/icons/csharp.svg" alt="Image" width="100%"></p-image>
+
+                            </div>
+                            <div
+                                class="border-round w-8rem h-6rem text-white font-bold flex align-items-center justify-content-center">
+                                <div class="skill" style="background-color: #a5dce2ef;">
+                                    <p-image src="assets/img/icons/sql-server.svg" alt="Image" width="100%"></p-image>
                                 </div>
                             </div>
                             <div
-                                class="border-round w-12rem h-6rem text-white font-bold flex align-items-center justify-content-center">
-                                <div class="skill" style="background-color: #68F17E;">
-                                    <h5 class="current-typo--h5 tb-color--black">SQL Server</h5>
-                                </div>
-                            </div>
-                            <div
-                                class="border-round w-12rem h-6rem text-white font-bold flex align-items-center justify-content-center">
-                                <div class="skill" style="background-color: #027DFD;">
-                                    <h5 class="current-typo--h5 tb-color--white">.NET</h5>
-                                </div>
-                            </div>
-                            <div
-                                class="border-round w-12rem h-6rem text-white font-bold flex align-items-center justify-content-center">
-                                <div class="skill" style="background-color: #fd02e8;">
-                                    <h5 class="current-typo--h5 tb-color--white">Azure</h5>
-                                </div>
+                                class="border-round w-6rem h-6rem text-white font-bold flex align-items-center justify-content-center">
+                                <p-image src="assets/img/icons/azure.svg" alt="Image" width="100%"></p-image>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:600}}" fxLayout="row"
                 fxLayoutAlign="start center" fxLayoutGap="32">
-                <a class="btn-area-cv" href="_blank" target="_blank">
-                    <button mat-raised-button color="primary"><span class="current-typo--button-medium">Download CV.</span></button>
-                </a>
+                <p-button label="Download CV" icon="pi pi-download"></p-button>
             </div>
         </div>
     </div>
 </div>
+
 <div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
     <div class="tb-container tb-position--relative container">
         <div fxLayout="column" fxLayoutAlign="start stretch">
             <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row"
                 fxLayoutAlign="start end">
-                <h4 class="title current-typo--h4 tb-flex--shrink-0">My skills</h4>
+                <p-divider></p-divider>
+                <h4 class="title current-typo--h4 tb-flex--shrink-0">Projects.</h4>
                 <div class="tb-width--12"></div>
                 <div fxFlex="60" class="line tb-color-bg--black"></div>
                 <div fxFlex class=""></div>
             </div>
+
+            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+            <div class="grid">
+                <div class="col relative">
+                    <div class="absolute top-0 right-0 flex align-items-center justify-content-center w-4rem h-4rem">
+                        <i class="pi pi-external-link"></i> 
+                    </div>
+
+                    <p-card>
+                        <ng-template pTemplate="title">
+                            <div class="grid">
+                                <div class="col-10">
+                                    <i class="pi pi-folder-open" style="font-size: 1.5rem"></i> Project 1
+                                </div>                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="subtitle">
+                            Last update: 2023
+                       </ng-template>           
+                       <ng-template pTemplate="content">
+                        Description project 1
+                    </ng-template>                         
+                        <ng-template pTemplate="footer">
+                            <p>.NET 7 | C# | Javascript | Html | CSS</p>
+                        </ng-template>
+                    </p-card>
+                </div>
+                <div class="col relative">
+                    <div class="absolute top-0 right-0 flex align-items-center justify-content-center w-4rem h-4rem">
+                        <i class="pi pi-external-link"></i> 
+                    </div>
+
+                    <p-card>
+                        <ng-template pTemplate="title">
+                            <div class="grid">
+                                <div class="col-10">
+                                    <i class="pi pi-folder-open" style="font-size: 1.5rem"></i> Project 2
+                                </div>                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="subtitle">
+                            Last update: 2023
+                       </ng-template>           
+                       <ng-template pTemplate="content">
+                        Description project 2
+                    </ng-template>               
+                        <ng-template pTemplate="footer">
+                            <p>Angular | Javascript | Html | CSS</p>
+                        </ng-template>
+                    </p-card>
+                </div>
+            </div>
+
         </div>
     </div>
+</div>
+
+<div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm" #animRefView>
+    <div class="tb-container tb-position--relative container">
+        <div fxLayout="column" fxLayoutAlign="start stretch">
+            <div [@transitionText]="{value:_mTriggerAnim, params:{animDelay:100}}" fxLayout="row"
+                fxLayoutAlign="start end">
+                <p-divider></p-divider>
+                <h4 class="title current-typo--h4 tb-flex--shrink-0">Experience.</h4>
+                <div class="tb-width--12"></div>
+                <div fxFlex="60" class="line tb-color-bg--black"></div>
+                <div fxFlex class=""></div>
+            </div>
+
+            <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
+
+            <div class="grid">
+                <div class="col">
+                    <p-card header="Luxoft" subheader="September 2022 - Current Job">
+                        <p>Senior Software Engineer</p>
+                        <p>.NET | Angular | JavaScript | SQL Server | Azure</p>
+                    </p-card>
+                </div>
+                <div class="col">
+                    <p-card header="Thomson Reuters" subheader="October 2023 - September 2022">
+                        <p>Senior Software Engineer</p>
+                        <p>.NET | Angular | JavaScript | SQL Server</p>
+                    </p-card>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

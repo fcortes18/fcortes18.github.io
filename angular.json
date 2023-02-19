@@ -31,8 +31,8 @@
             ],
             "styles": [
               "./node_modules/primeicons/primeicons.css",
-              "./node_modules/primeng/resources/themes/arya-purple/theme.css",
               "./node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeng/resources/themes/lara-dark-blue/theme.css",
               "./node_modules/primeflex/primeflex.css",
               "src/styles.scss"
             ],
@@ -98,8 +98,8 @@
             ],
             "styles": [
               "./node_modules/primeicons/primeicons.css",
-              "./node_modules/primeng/resources/themes/arya-purple/theme.css",
               "./node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeng/resources/themes/lara-dark-blue/theme.css",
               "./node_modules/primeflex/primeflex.css",
               "src/styles.scss"
             ],

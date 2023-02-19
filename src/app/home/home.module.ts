@@ -10,6 +10,9 @@ import { MatCardModule} from '@angular/material/card'
 import { MatGridListModule} from '@angular/material/grid-list'
 import { MatListModule} from '@angular/material/list'
 import { ImageModule} from 'primeng/image'
+import { ButtonModule} from 'primeng/button'
+import {DividerModule} from 'primeng/divider';
+import { CardModule} from 'primeng/card'
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ImageModule} from 'primeng/image'
     MatCardModule,
     MatGridListModule,
     MatListModule,
-    ImageModule
+    ImageModule,
+    ButtonModule,
+    DividerModule,
+    CardModule
   ]
 })
 export class HomeModule { }
