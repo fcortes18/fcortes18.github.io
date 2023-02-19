@@ -1,12 +1,18 @@
 <!-- <p>banner component is the home-top component</p> -->
 <mat-card class="example-card">
     <mat-card-header>
-      <mat-card-title [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}">Hi, I'm Alexis Cortes</mat-card-title>
-      <mat-card-subtitle [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
-      (@transitionTextEnter.done)='_onTextAnimationEnd($event)'>Software Developer</mat-card-subtitle>
+        <mat-list>
+            <mat-list-item>
+                <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}">Hi, I'm Alexis Cortes</h2>
+            </mat-list-item>
+            <mat-list-item>
+          <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+          (@transitionTextEnter.done)='_onTextAnimationEnd($event)'>Software Developer</p>
+            </mat-list-item>
+          </mat-list>
     </mat-card-header>
     <mat-card-content>
-        <br><br> 
+        <br>
         <!-- <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 300}}" ngClass.gt-sm="current-typo--h1-light"
             ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">Love</h2>
 
@@ -20,9 +26,9 @@
             I am a .NET developer.</p> -->
 
 
-            <mat-grid-list cols="2" >
+        <!--    <mat-grid-list cols="2" >
                 <mat-grid-tile>
-                    <img style="object-fit: cover; height: inherit; width: inherit;" layout-fill src="assets/img/avatar/pic_avatar.jpeg" />
+                    <p-image src="assets/img/avatar/pic_avatar.jpeg" alt="Image" width="100%"></p-image>
                 </mat-grid-tile>
                 <mat-grid-tile>
                     <mat-list>
@@ -39,16 +45,57 @@
                         </mat-list-item>
                       </mat-list>
                 </mat-grid-tile>
-              </mat-grid-list>
+              </mat-grid-list> -->
 
-              
+              <div class="grid">
+                <div class="col hidden md:inline-flex">
+                    <div class="text-center border-round-sm font-bold text-white mx-4">
+                        <p-image src="assets/img/avatar/pic_avatar.jpeg" alt="Image" width="100%"></p-image>
+                    </div>
+                </div>
+                <div class="col">
+
+
+                      <!--<div class="card">
+                        <div class="flex flex-wrap justify-content-center card-container blue-container gap-3">
+                            <mat-list>
+                                <mat-list-item>
+                                    <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 400}}" ngClass.gt-sm="current-typo--h1-light"
+                                        ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3">Love to Develop Software</h2>
+                                    <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--16" ngClass.xs="tb-height--8"></div>
+                                </mat-list-item>
+                                <mat-list-item>
+                                    <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+                                    (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
+                                    ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+                                    I am a .NET developer.</p>
+                                </mat-list-item>
+                              </mat-list>
+                        </div>
+                    </div>-->
+
+                    <mat-list>
+                        <mat-list-item>
+                            <h2 [@transitionTextEnter]="{value:'in', params: {animDelay: 400}}" ngClass.gt-sm="current-typo--h1-light"
+                                ngClass.sm="current-typo--h2-light" ngClass.xs="current-typo--h3"><i class="pi pi-heart-fill"></i> Love to Develop Software</h2>
+                            <div ngClass.gt-sm="tb-height--24" ngClass.sm="tb-height--16" ngClass.xs="tb-height--8"></div>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+                            (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
+                            ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+                            I am mostly a .NET developer --> <i class="pi pi-microsoft"></i></p> 
+                        </mat-list-item>
+                        <mat-list-item>
+                            <p [@transitionTextEnter]="{value:'in', params: {animDelay: 700}}"
+                            (@transitionTextEnter.done)='_onTextAnimationEnd($event)' class="detail tb-color--black-54"
+                            ngClass.gt-sm="current-typo--body1" ngClass.sm="current-typo--body1" ngClass.xs="current-typo--body1">
+                            Cloud-based experienced --> <i class="pi pi-cloud"></i></p> 
+                        </mat-list-item>  
+                                            
+                    </mat-list>
+                    
+                </div>
+            </div>
     </mat-card-content>
   </mat-card>
-
-<br><br>
-  <!-- <div class="tb-position--relative main" ngClass.xs="xs" ngClass.sm="sm">
-    <div class="tb-container tb-position--relative container">
-        <div class="content-container" fxLayout="column">
-        </div>
-    </div>
-</div> -->
