@@ -10,6 +10,7 @@ import { MainContainerComponent } from './components/main-container/main-contain
 import { RouterModule } from '@angular/router';
 import { WidgetWaterfallDirective } from './directives/widget-waterfall.directive';
 import { FooterComponent } from './components/footer/footer.component';
+import { ButtonModule} from 'primeng/button'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-
+    ButtonModule,
     RouterModule,
     MatDialogModule,
     SharedRoutingModule

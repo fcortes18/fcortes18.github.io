@@ -9,6 +9,10 @@ import { AboutComponent } from './components/about/about.component';
 import { MatCardModule} from '@angular/material/card'
 import { MatGridListModule} from '@angular/material/grid-list'
 import { MatListModule} from '@angular/material/list'
+import { ImageModule} from 'primeng/image'
+import { ButtonModule} from 'primeng/button'
+import {DividerModule} from 'primeng/divider';
+import { CardModule} from 'primeng/card'
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { MatListModule} from '@angular/material/list'
     HomeRoutingModule,
     MatCardModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    ImageModule,
+    ButtonModule,
+    DividerModule,
+    CardModule
   ]
 })
 export class HomeModule { }
