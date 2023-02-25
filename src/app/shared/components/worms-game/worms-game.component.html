@@ -1,0 +1,10 @@
+<div class="worms-game">
+    <div class="worm" [style.left.px]="worm.x"></div>
+    <div class="missiles">
+      <div class="missile" *ngFor="let missile of missiles" [style.left.px]="missile.x" [style.top.px]="missile.y"></div>
+    </div>
+    <div class="targets">
+      <div class="target" *ngFor="let target of targets" [style.left.px]="target.x" [style.top.px]="target.y"></div>
+    </div>
+  </div>
+  

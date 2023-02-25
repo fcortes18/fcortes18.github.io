@@ -10,13 +10,15 @@ import { MainContainerComponent } from './components/main-container/main-contain
 import { RouterModule } from '@angular/router';
 import { WidgetWaterfallDirective } from './directives/widget-waterfall.directive';
 import { FooterComponent } from './components/footer/footer.component';
-import { ButtonModule} from 'primeng/button'
+import { ButtonModule} from 'primeng/button';
+import { WormsGameComponent } from './components/worms-game/worms-game.component'
 
 @NgModule({
   declarations: [
     MainContainerComponent,
     WidgetWaterfallDirective,
-    FooterComponent
+    FooterComponent,
+    WormsGameComponent
   ],
   imports: [
     CommonModule,
